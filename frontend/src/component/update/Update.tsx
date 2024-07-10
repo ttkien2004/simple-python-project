@@ -14,7 +14,7 @@ export default function Update() {
     e.preventDefault();
     //Update information of student or PUT
     axios
-      .put("http://localhost:3000/update/" + userID, {
+      .put("http://localhost:3000/component/update/" + userID, {
         name: student.name,
         gender: student.gender,
         faculty: student.faculty,

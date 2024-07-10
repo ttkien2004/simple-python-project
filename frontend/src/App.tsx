@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Student from "./Student";
 import CreateStudent from "./CreateStudent";
 import "./App.css";
-import UpdateStudent from "./UpdateStudent";
+import Update from "./component/update/Update";
 
 function App() {
   return (
@@ -13,7 +13,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Student />}></Route>
           <Route path="/create" element={<CreateStudent />}></Route>
-          <Route path="/update/:userID" element={<UpdateStudent />}></Route>
+          <Route path="/component">
+            <Route path="update">
+              <Route path=":userID" element={<Update />}></Route>
+            </Route>
+          </Route>
         </Routes>
       </Router>
     </div>

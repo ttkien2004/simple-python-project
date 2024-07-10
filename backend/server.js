@@ -35,7 +35,7 @@ app.post("/create", (req, res) => {
     })
 })
 // Update information of student
-app.put("/update/:userID", (req, res) => {
+app.put("/component/update/:userID", (req, res) => {
     const sql = "UPDATE student_details SET name = ?, sex = ?, faculty = ? WHERE ID = ?"
     console.log(req.body.name)
     const values = [        

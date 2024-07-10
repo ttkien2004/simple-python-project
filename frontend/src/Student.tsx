@@ -47,7 +47,10 @@ export default function Student() {
                 <td>{val.sex}</td>
                 <td>{val.faculty}</td>
                 <td>
-                  <Link to={`/update/${val.ID}`} className="btn btn-update">
+                  <Link
+                    to={`/component/update/${val.ID}`}
+                    className="btn btn-update"
+                  >
                     Update
                   </Link>
                   <button
