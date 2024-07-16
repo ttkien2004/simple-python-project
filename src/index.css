@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Logo {
+    @apply w-32
+}
+
+.header {
+    @apply flex items-center
+}
