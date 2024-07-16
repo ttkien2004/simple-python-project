@@ -2,10 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.Logo {
-    @apply w-32
+body {
+    @apply relative h-[2000px]
 }
-
+.Logo {
+    @apply w-[100px] ml-5 cursor-pointer
+}
+/* For header, right side and left side of header */
 .header {
-    @apply flex items-center
+    @apply fixed top-0 z-[100] w-[100%] h-[100px] flex items-center bg-[#ede6d7]
+}
+.right-header {
+    @apply grid grid-cols-3 gap-x-5 absolute right-10
+}
+.right-content {
+    @apply flex justify-center cursor-pointer p-2 hover:border-b border-b-red-500
+}
+/* Body part */
+.body-part {
+    @apply absolute top-[100px] w-[100%] h-[650px] bg-[#ede6d7];
+}
+.body-part img{
+    @apply h-[100%] object-cover
+}
+.body-content {
+    @apply absolute top-[35%] w-[800px] pl-10
+}
+/* Footer */
+.footer {
+    @apply absolute bottom-0 w-[100%] h-[500px] border border-green-500 bg-[#282828] 
+    grid grid-cols-3
+}
+.footer div h1{
+    @apply text-white font-bold text-[28px]
+}
+.footer div div{
+    @apply text-[#a39f97] text-[16px]
 }
