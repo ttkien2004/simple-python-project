@@ -30,12 +30,31 @@ body {
 }
 /* Footer */
 .footer {
-    @apply absolute bottom-0 w-[100%] h-[500px] border border-green-500 bg-[#282828] 
+    @apply absolute bottom-0 w-[100%] h-[500px] bg-[#282828] 
     grid grid-cols-3
 }
 .footer div h1{
-    @apply text-white font-bold text-[28px]
+    @apply text-white font-bold text-[28px] pl-10 mt-5
 }
+
 .footer div div{
-    @apply text-[#a39f97] text-[16px]
+    @apply text-[#a39f97] text-[16px] pt-1 pb-1 relative
+}
+form {
+    @apply pl-10
+}
+form label {
+    @apply mt-5 mb-3
+}
+form label input{
+    @apply w-[350px] h-[35px] rounded-md pl-2 text-sm
+}
+form label textarea {
+    @apply w-[350px] rounded-md pl-2 text-sm h-[100px]
+}
+.star {
+    @apply text-red-500 absolute -top-5
+}
+.small-icon {
+    @apply h-5 absolute -left-7 top-2
 }
