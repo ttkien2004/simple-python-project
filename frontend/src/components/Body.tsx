@@ -1,6 +1,8 @@
 import React from "react";
 import library from "../assets/library.jpg";
 import bodyLayout from "../assets/body_layout.png";
+import Services from "../BookSelfLayout/Services1";
+import Services2 from "../BookSelfLayout/Services2";
 
 export default function Body() {
   return (
@@ -19,6 +21,8 @@ export default function Body() {
           READ MORE
         </button>
       </div>
+
+      <Services />
     </div>
   );
 }
