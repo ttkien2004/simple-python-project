@@ -23,6 +23,7 @@ export default function Body() {
       </div>
 
       <Services />
+      <Services2 />
     </div>
   );
 }
