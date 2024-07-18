@@ -3,6 +3,9 @@ import library from "../assets/library.jpg";
 import bodyLayout from "../assets/body_layout.png";
 import Services from "../BookSelfLayout/Services1";
 import Services2 from "../BookSelfLayout/Services2";
+import Author1 from "../AuthorIntro/Author1";
+import Author2 from "../AuthorIntro/Author2";
+import Branches from "../BookLogo/BookBrand";
 
 export default function Body() {
   return (
@@ -24,6 +27,9 @@ export default function Body() {
 
       <Services />
       <Services2 />
+      <Author1 />
+      <Author2 />
+      <Branches />
     </div>
   );
 }

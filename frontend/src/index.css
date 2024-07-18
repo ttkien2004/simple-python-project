@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply relative h-[3000px]
+    @apply relative h-[4000px]
 }
 .Logo {
     @apply w-[100px] ml-5 cursor-pointer
@@ -80,6 +80,9 @@ form label textarea {
 .service1-button {
     @apply top-[250px] w-[100%] flex justify-center
 }
+.service1-button button{
+    @apply hover:bg-white hover:text-black
+}
 /* For author container */
 .services2 {
     @apply w-[100%] absolute -bottom-[1000px]
@@ -99,4 +102,34 @@ form label textarea {
 }
 .service2-center {
     @apply flex justify-center
+}
+/* For author1 intro */
+.Author1-intro {
+    @apply absolute -bottom-[1700px] h-[500px]
+}
+.AuthorLayout1 {
+    @apply h-[400px] w-[500px] pr-5
+}
+.AuthorLayout1 img{
+    @apply h-[100%] w-[100%] object-cover
+}
+.Author1 {
+    @apply absolute top-5 left-[80px] h-[300px]
+}
+/* For Author2 intro */
+.Author2-intro {
+    @apply absolute -bottom-[2300px] h-[500px] w-[100%]
+}
+.AuthorLayout2 {
+    @apply w-[550px]
+}
+.AuthorLayout2 img{
+    @apply w-[530px]
+}
+.Author2 {
+    @apply absolute top-12 left-[100px] h-[300px]
+}
+/* For all book brands */
+.brand-book {
+    @apply absolute -bottom-[2500px] w-[100%] flex items-center justify-between pl-14 pr-14
 }
