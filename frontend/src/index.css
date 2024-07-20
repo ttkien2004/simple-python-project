@@ -58,9 +58,15 @@ form label textarea {
 .small-icon {
     @apply h-5 absolute -left-7 top-2
 }
+/* For main body contains: service1, service2, author1-intro, author2-intro, bookBrand */
+.main-body {
+    @apply border border-red-500 absolute top-[1000px]
+}
+
 /* For service1 */
 .service1 {
-    @apply absolute -bottom-[450px] w-[100%] h-[400px]
+    /* @apply absolute -bottom-[1000px] w-[100%] h-[400px] */
+    @apply w-[100%] h-[400px] relative
 }
 .service1 img {
     @apply h-[100%] w-[100%]
@@ -85,7 +91,8 @@ form label textarea {
 }
 /* For author container */
 .services2 {
-    @apply w-[100%] absolute -bottom-[1000px]
+    /* @apply w-[100%] absolute -bottom-[1600px] */
+    @apply w-[100%]
 }
 .author-container {
     @apply grid grid-cols-4 gap-x-12 pl-10 pr-10 mt-16
@@ -105,20 +112,24 @@ form label textarea {
 }
 /* For author1 intro */
 .Author1-intro {
-    @apply absolute -bottom-[1700px] h-[500px]
+    /* @apply absolute -bottom-[2000px] h-[500px]
+     */
+     @apply h-[500px] relative
 }
 .AuthorLayout1 {
-    @apply h-[400px] w-[500px] pr-5
+    @apply h-[400px] w-[600px] pr-5 mt-5
 }
 .AuthorLayout1 img{
     @apply h-[100%] w-[100%] object-cover
 }
 .Author1 {
-    @apply absolute top-5 left-[80px] h-[300px]
+    @apply absolute top-10 left-[100px] h-[350px]
 }
+
 /* For Author2 intro */
 .Author2-intro {
-    @apply absolute -bottom-[2300px] h-[500px] w-[100%]
+    /* @apply absolute -bottom-[2300px] h-[500px] w-[100%] */
+    @apply w-[100%] h-[500px] relative
 }
 .AuthorLayout2 {
     @apply w-[550px]
@@ -131,5 +142,6 @@ form label textarea {
 }
 /* For all book brands */
 .brand-book {
-    @apply absolute -bottom-[2500px] w-[100%] flex items-center justify-between pl-14 pr-14
+    /* @apply absolute -bottom-[2500px] w-[100%] flex items-center justify-between pl-14 pr-14 */
+    @apply  w-[100%] flex items-center justify-between pl-14 pr-14
 }

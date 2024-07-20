@@ -7,7 +7,7 @@ import MainBackground from "../assets/AuthorIntro/MainBackground.jpg";
 export default function Author1() {
   return (
     <div className="Author1-intro">
-      <img src={MainBackground}></img>
+      <img src={MainBackground} className="h-[100%]"></img>
       <div className="absolute top-[30%] pl-10">
         <h1 className="text-[#999999] text-sm">AUTOBIOGRAPHY</h1>
         <h1 className="text-3xl mt-1 mb-5">This month's guest host</h1>
@@ -22,12 +22,12 @@ export default function Author1() {
           READ MORE
         </button>
       </div>
-      <div className="absolute top-0 right-0 mt-16">
+      <div className="absolute top-0 right-0">
         <div className="AuthorLayout1">
           <img src={AuthorLayout}></img>
         </div>
         <div className="Author1">
-          <img src={Author}></img>
+          <img src={Author} className="w-[100%] h-[100%] object-cover"></img>
         </div>
       </div>
     </div>

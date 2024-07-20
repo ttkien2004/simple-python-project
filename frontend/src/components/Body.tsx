@@ -24,12 +24,6 @@ export default function Body() {
           READ MORE
         </button>
       </div>
-
-      <Services />
-      <Services2 />
-      <Author1 />
-      <Author2 />
-      <Branches />
     </div>
   );
 }
