@@ -15,12 +15,25 @@ const db = mysql.createConnection({
 })
 
 // Get information of books
-app.get("/", (req, res) => {
+app.get("/all", (req, res) => {
     const sql = "SELECT * FROM shelfbook_1"
     db.query(sql, (err, data) => {
-        if (err) return res.json("Error");
-        console.log(res.json(data))
+        if (err) return res.json("Error");        
         return res.json(data);
+    })
+})
+app.get("/BestSeller", (req, res) => {
+    const sql = "SELECT * FROM shelfbook_2"
+    db.query(sql, (err, data) => {
+        if (err) return res.json("Error")
+            return res.json(data)
+    })
+})
+app.get("/Fantasy", (req, res) => {
+    const sql = "SELECT * FROM shelfbook_3"
+    db.query(sql, (err, data) => {
+        if (err) return res.json("Error")
+        return res.json(data)
     })
 })
 

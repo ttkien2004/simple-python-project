@@ -5,7 +5,6 @@ import "./index.css";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import MainBody from "./components/MainBody";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <Body />
       <MainBody />
-      <Footer />
     </>
   );
 }

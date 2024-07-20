@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply relative h-[4000px]
+    @apply relative
 }
 .Logo {
     @apply w-[100px] ml-5 cursor-pointer
@@ -30,8 +30,10 @@ body {
 }
 /* Footer */
 .footer {
-    @apply absolute bottom-0 w-[100%] h-[500px] bg-[#282828] 
+    @apply mt-[80px] w-[100%] h-[500px] bg-[#282828] 
     grid grid-cols-3
+    /* @apply mb-0 w-[100%] h-[500px] bg-[#282828] 
+    grid grid-cols-3 */
 }
 .footer div h1{
     @apply text-white font-bold text-[28px] pl-10 mt-5
@@ -60,7 +62,7 @@ form label textarea {
 }
 /* For main body contains: service1, service2, author1-intro, author2-intro, bookBrand */
 .main-body {
-    @apply border border-red-500 absolute top-[1000px]
+    @apply absolute top-[800px]
 }
 
 /* For service1 */
@@ -92,7 +94,7 @@ form label textarea {
 /* For author container */
 .services2 {
     /* @apply w-[100%] absolute -bottom-[1600px] */
-    @apply w-[100%]
+    @apply w-[100%] mt-[100px]
 }
 .author-container {
     @apply grid grid-cols-4 gap-x-12 pl-10 pr-10 mt-16
@@ -114,7 +116,7 @@ form label textarea {
 .Author1-intro {
     /* @apply absolute -bottom-[2000px] h-[500px]
      */
-     @apply h-[500px] relative
+     @apply h-[500px] mt-[100px] relative
 }
 .AuthorLayout1 {
     @apply h-[400px] w-[600px] pr-5 mt-5
@@ -129,7 +131,7 @@ form label textarea {
 /* For Author2 intro */
 .Author2-intro {
     /* @apply absolute -bottom-[2300px] h-[500px] w-[100%] */
-    @apply w-[100%] h-[500px] relative
+    @apply w-[100%] h-[500px]  mt-[140px] relative
 }
 .AuthorLayout2 {
     @apply w-[550px]
@@ -143,5 +145,18 @@ form label textarea {
 /* For all book brands */
 .brand-book {
     /* @apply absolute -bottom-[2500px] w-[100%] flex items-center justify-between pl-14 pr-14 */
-    @apply  w-[100%] flex items-center justify-between pl-14 pr-14
+    @apply  w-[100%] mt-[80px] flex items-center justify-between pl-14 pr-14
+}
+/* For Bookshelf */
+.button-container {
+    @apply flex justify-center
+}
+.button-hover {
+    @apply pl-5 pr-5 pt-3 pb-3 hover:bg-black hover:text-white
+}
+.button-not-hover {
+    @apply pl-5 pr-5 pt-3 pb-3 bg-black text-white
+}
+.BookImage {
+    @apply h-[290px] w-[210px]
 }
