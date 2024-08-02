@@ -1,6 +1,8 @@
 const express = require('express')
 const cors = require('cors')
 const mysql = require('mysql')
+const swaggerjsdoc = require("swagger-jsdoc")
+const swaggerui = require("swagger-ui-express")
 const app = express()
 
 app.use(cors())
@@ -65,6 +67,26 @@ app.delete("/student/:userID", (req, res) => {
         return res.json(data)
     })
 })
+
+const options = {
+    definition: {
+        openapi: "3.0.0",
+        info: {
+            title: "Student api"
+        },
+        servers: [
+            {
+                url: "localhost:3000"
+            }
+        ]
+    },
+    apis: []
+}
+const spacs = swaggerjsdoc(options)
+app.use("/api-student",
+    swaggerui.serve,
+    swaggerui.setup(spacs)
+)
 app.listen(3000, () => {
     console.log("Listening Localhost:3000")
 })
